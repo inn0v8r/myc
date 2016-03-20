@@ -23,7 +23,7 @@ app.post('/foo', function(req, res) {
 
   var request = require('request');
   console.log("in post");
-  var options={'text':req.body.Subject+" was send from "+req.body.From
+  var options={'text':req.body.Subject+" was sent from "+req.body.From
               }
  //console.log(req.body);
   request({
