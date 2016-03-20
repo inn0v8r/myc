@@ -27,7 +27,7 @@ app.post('/foo', function(req, res) {
               }
  //console.log(req.body);
   request({
-    url: "<mywebhook>",
+    url: process.env.SLACK_HOOK,
     method: "POST",
     json: true,   // <--Very important!!!
     body: options
