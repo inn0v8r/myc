@@ -23,9 +23,10 @@ app.post('/foo', function(req, res) {
 
   var request = require('request');
   console.log("in post");
-  var options={'text':req.body.Subject+" was sent from "+req.body.From
-              }
+  //var options={'text':req.body.Subject+" was sent from "+req.body.From
+ //             }
  //console.log(req.body);
+ var options ={'text':'Got Blast'}
   request({
     url: process.env.SLACK_HOOK,
     method: "POST",
